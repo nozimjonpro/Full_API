@@ -1,8 +1,22 @@
+
 .simple .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 150px;
+
+    &::before{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        content: '';
+        display: block;
+        width: 500px;
+        height: 500px;
+        background-image: url(/img/half-circle.png);
+        background-repeat: no-repeat;
+        background-size: 500px;
+    }
 }
 
 .simple__info{

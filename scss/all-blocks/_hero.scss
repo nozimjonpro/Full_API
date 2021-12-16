@@ -1,27 +1,25 @@
-
-
-// .main {
-//     position: relative;
-//     scroll-margin: 0;
-//   &::before {
-//     position: absolute;
-//     top: -172px;
-//     right: -140px;
-//     z-index: -1;
-//     display: block;
-//     max-width: 780px;
-//     width: 100%;
-//     height: 780px;
-//     background-image: url(/circle.png);
-//     background-repeat: no-repeat;
-//     content: "";
-//   }
-// }
+.hero {
+  position: relative;
+}
 
 .hero .container {
   display: flex;
   align-items: center;
   margin-bottom: 75px;
+  &::before {
+    position: absolute;
+    top: -164px;
+    right: 0;
+    z-index: -1;
+    display: block;
+    max-width: 630px;
+    width: 100%;
+    height: 630px;
+    background-image: url(/img/circle.png);
+    background-repeat: no-repeat;
+    background-size: 630px;
+    content: "";
+  }
 }
 
 .hero__image {
